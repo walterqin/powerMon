@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pic/wait.png</file>
+        <file>pic/cs.png</file>
+        <file>translations/powerMon_en.qm</file>
+        <file>translations/powerMon_zh.qm</file>
+    </qresource>
+</RCC>

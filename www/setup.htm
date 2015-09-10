@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>setup</title>
+<style type="text/css">
+.style1 {
+	text-align: center;
+	font-family: 华文隶书;
+	font-size: x-large;
+}
+.style2 {
+	font-size: medium;
+	border-width: 0px;
+}
+.style3 {
+	border-style: solid;
+	border-width: 1px;
+}
+.style4 {
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+}
+</style>
+</head>
+
+<body  bgcolor="#9EDDEF" leftmargin=10>
+<p class="style1">系统配置</p>
+<hr />
+<table style="width: 62%" align="center" class="style2">
+	<tr>
+		<td style="width: 101px; height: 37px" class="style4">操&nbsp;&nbsp; 作</td>
+		<td style="width: 167px; height: 37px" class="style4">配置项</td>
+		<td class="style4" style="height: 37px">参&nbsp; 数 </td>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit1" type="submit" value="修改" />
+		<input name="Reset1" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">电源电流报警下限</td>
+		<td class="style3"><input name="cur1" type="text" value="0" />&nbsp; A</td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit2" type="submit" value="修改" />
+		<input name="Reset2" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">电源电流报警上限</td>
+		<td class="style3"><input name="cur2" type="text" value="30" />&nbsp; A</td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit3" type="submit" value="修改" />
+		<input name="Reset3" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">电源电压报警下限</td>
+		<td class="style3"><input name="vol1" type="text" value="110" />&nbsp; V</td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit4" type="submit" value="修改" />
+		<input name="Reset4" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">电源电压报警上限</td>
+		<td class="style3"><input name="vol2" type="text" value="230" />&nbsp; V</td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit5" type="submit" value="修改" />
+		<input name="Reset5" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">远程控制口IP地址</td>
+		<td class="style3">
+		<input name="ip" type="text" style="width: 196px" value="192.168.1.253" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit6" type="submit" value="修改" />
+		<input name="Reset6" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">远程控制口网关地址</td>
+		<td class="style3">
+		<input name="gateway" type="text" style="width: 196px" value="192.168.1.1" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit7" type="submit" value="修改" />
+		<input name="Reset7" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">报警邮箱地址</td>
+		<td class="style3"><input name="email" type="text" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit8" type="submit" value="修改" />
+		<input name="Reset8" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">定时关电时间</td>
+		<td class="style3"><input name="dntime" type="text" value="0" />&nbsp; s</td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit9" type="submit" value="修改" />
+		<input name="Reset9" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">定时上电时间</td>
+		<td class="style3"><input name="uptime" type="text" value="0" />&nbsp; s</td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit10" type="submit" value="修改" />
+		<input name="Reset10" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">开关默认状态</td>
+		<td class="style3"><input name="dstatus" type="text" value="0" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit11" type="submit" value="修改" />
+		<input name="Reset11" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">开关开始状态</td>
+		<td class="style3"><input name="bstatus" type="text" value="1" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit12" type="submit" value="修改" />
+		<input name="Reset12" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">最大电源路数</td>
+		<td class="style3"><input name="maxways" type="text" value="8" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit13" type="submit" value="修改" />
+		<input name="Reset13" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">串口属性</td>
+		<td class="style3"><input name="serialattr" type="text" value="9600,8,n,1" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit14" type="submit" value="修改" />
+		<input name="Reset14" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">串口端口号</td>
+		<td class="style3"><input name="serialport" type="text" value="" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit15" type="submit" value="修改" />
+		<input name="Reset15" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">通讯串口类型</td>
+		<td class="style3"><input name="serialtype" type="text" value="rs485" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit16" type="submit" value="修改" />
+		<input name="Reset16" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">开关顺序开/闭间隔</td>
+		<td class="style3"><input name="interval" type="text" value="0" />s</td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4">
+		<input name="Submit17" type="submit" value="修改" />
+		<input name="Reset17" type="reset" value="重置" /> </td>
+		<td style="width: 167px" class="style4">定时开关机使能</td>
+		<td class="style3"><input name="ontime" type="text" value="0" /></td>
+		</form>
+	</tr>
+	<tr>
+		<form method="post" action="cgi-bin/setup.cgi">
+		<td style="width: 101px" class="style4"></td>
+		<td style="width: 167px" class="style4">版本信息</td>
+		<td class="style3"><input name="version" type="text" value="0.1" /></td>
+		</form>
+	</tr>
+	</table>
+</body>
+
+</html>

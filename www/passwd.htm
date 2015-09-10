@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>password</title>
+<!--base target="_self" /-->
+<style type="text/css">
+.style1 {
+	text-align: center;
+	font-family: 华文隶书;
+	font-size: x-large;
+}
+.style4 {
+	font-family: 华文宋体;
+	text-align: center;
+	font-size: large;
+}
+.style5 {
+	font-family: 华文宋体;
+	text-align: center;
+	font-size: large;
+	color: #3366FF;
+}
+.style6 {
+	text-align: center;
+}
+.style7 {
+	margin-left: 26px;
+}
+</style>
+<script language="javascript" type="text/javascript">
+function fnOnSubmit(theForm) {
+	if (theForm.elements['username'].value == '' ) {
+		alert('必须输入用户名');
+		theForm.elements['username'].focus();
+		return false;
+	} else if （theForm.elements['passwd'].value.length < 6) {
+		alert('密码长度太短，至少需要6个字符');
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+
+
+
+<body  bgcolor="#9EDDEF" leftmargin=10>
+
+<p class="style1">密 码 设 置</p>
+
+<hr></hr>
+
+<form action="cgi-bin/password.cgi" method="post" onsubmit="return fnOnSubmit(this);">
+<table style="width: 27%; height: 139px" align="center">
+	<tr>
+		<td style="width: 170px; color: #3366FF; height: 52px;" class="style4">
+		<strong>用户名</strong></td>
+		<td style="width: 280px; height: 52px" class="style6">
+		<input name="username" type="text" style="height: 36px; width: 148px; background-color: #C0C0C0;" /></td>
+	</tr>
+	<tr>
+		<td class="style5" style="width: 170px"><strong>密码</strong></td>
+		<td style="width: 280px; height: 52px"" class="style6">
+		<!--webbot bot="Validation" b-value-required="TRUE" i-minimum-length="6" -->
+		<input name="passwd" type="password" style="height: 32px; width: 148px; background-color: #C0C0C0;" /></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input name="adduser" type="submit" value="添加" style="height: 40px; width: 70px" class="style2" />
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input name="reset" type="reset" value="重置" style="height: 40px; width: 70px" class="style2" /> 
+		</td>
+
+	</tr>
+</table>
+</form>
+<hr />
+
+</body>
+
+</html>

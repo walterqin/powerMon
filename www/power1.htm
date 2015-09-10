@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<!--meta http-equiv="refresh" content="20" /--> 
+<title>power</title>
+<base target="_self" />
+<style type="text/css">
+.style1 {
+	margin-left: 0px;
+}
+.style2 {
+	margin-left: 9px;
+}
+.style3 {
+	text-align: center;
+	font-family: 隶书;
+	font-size: x-large;
+}
+</style>
+<script language="javascript" type="text/javascript" src="xmlhttpreq.js"> 
+setInterval("document.paremeter.refresh.onclick()",5000) 
+</script> 
+
+</head>
+
+<!--  background="../images/background.jpg" !-->
+
+<body bgcolor="#9EDDEF" leftmargin=10 >
+<p class="style3">电 力 参 数</p>
+
+<hr></hr>
+
+<form method="post" id="powerform" name="paremeter" >
+<table style="width: 68%" align="center" >
+	<tr>
+		<td style="width: 151px">
+	<fieldset name="Group1" style="width: 147px; height: 143px">
+	<legend>1#电源</legend>
+	
+	<table style="width: 100%; height: 131px" >
+		<form action="" method="post" id="way1" name="form1" >
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电压</td>
+			<td>
+			<input id="volt1" name="volt1" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电流</td>
+			<td>
+			<input id="curr1" name="curr1" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">
+			状态</td>
+			<td>
+			<input id="stat1" name="stat1" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		</form>
+		<tr>
+			<td colspan="2" align="center">
+			<form action="cgi-bin/relay.cgi" method="post" style="height: 26px; width: 134px">
+			<input name="open1" type="submit" value="打开" style="height: 29px; width: 44px" class="style2" />
+			<input name="close1" type="submit" value="关闭" style="height: 29px; width: 44px" class="style2" /> 
+			</form>
+			</td>
+		</tr>
+	</table>
+	</fieldset></td>
+		<td style="width: 145px">
+	<fieldset name="Group1" style="width: 147px; height: 143px">
+	<legend>2#电源</legend>
+	
+	<table style="width: 100%; height: 123px">
+		<form action="" method="post">
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电压</td>
+			<td>
+			<input id="volt2" name="volt2" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电流</td>
+			<td>
+			<input id="curr2" name="curr2" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">
+			状态</td>
+			<td>
+			<input id="stat2" name="stat2" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		</form>
+		<tr>
+			<td colspan="2" align="center">
+			<form action="cgi-bin/relay.cgi" method="post" style="">
+			<input name="open2" type="submit" value="打开" style="height: 29px; width: 44px" class="style2" />
+			<input name="close2" type="submit" value="关闭" style="height: 29px; width: 44px" class="style2" /> 
+			</form>
+			</td>
+		</tr>
+	</table>
+	</fieldset></td>
+		<td style="width: 144px">
+	<fieldset name="Group1" style="width: 147px; height: 143px">
+	<legend>3#电源</legend>
+	
+	<table style="width: 100%; height: 123px">
+		<form action="" method="post">
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电压</td>
+			<td>
+			<input id="volt3" name="volt3" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电流</td>
+			<td>
+			<input id="curr3" name="curr3" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">
+			状态</td>
+			<td>
+			<input id="stat3" name="stat3" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		</form>
+		<tr>
+			<td colspan="2" align="center">
+			<form action="cgi-bin/relay.cgi" method="post">
+			<input name="open3" type="submit" value="打开" style="height: 29px; width: 44px" class="style2" />
+			<input name="close3" type="submit" value="关闭" style="height: 29px; width: 44px" class="style2" /> 
+			</form>
+			</td>
+		</tr>
+	</table>
+	</fieldset></td>
+		<td>
+	<fieldset name="Group1" style="width: 147px; height: 143px">
+	<legend>4#电源</legend>
+	
+	<table style="width: 100%; height: 123px">
+		<form action="" method="post">
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电压</td>
+			<td>
+			<input id="volt4" name="volt4" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电流</td>
+			<td>
+			<input id="curr4" name="curr4" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">
+			状态</td>
+			<td>
+			<input id="stat4" name="stat4" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		</form>
+		<tr>
+			<td colspan="2" align="center">
+			<form action="cgi-bin/relay.cgi" method="post">
+			<input name="open4" type="submit" value="打开" style="height: 29px; width: 44px" class="style2" />
+			<input name="close4" type="submit" value="关闭" style="height: 29px; width: 44px" class="style2" /> 
+			</form>
+			</td>
+		</tr>
+	</table>
+	</fieldset></td>
+	</tr>
+	<tr>
+		<td style="width: 151px">
+	<fieldset name="Group1" style="width: 147px; height: 143px">
+	<legend>5#电源</legend>
+	
+	<table style="width: 100%; height: 123px">
+		<form action="" method="post">
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电压</td>
+			<td>
+			<input id="volt5" name="volt5" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电流</td>
+			<td>
+			<input id="curr5" name="curr5" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">
+			状态</td>
+			<td>
+			<input id="stat5" name="stat5" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		</form>
+		<tr>
+			<td colspan="2" align="center">
+			<form action="cgi-bin/relay.cgi" method="post">
+			<input name="open5" type="submit" value="打开" style="height: 29px; width: 44px" class="style2" />
+			<input name="close5" type="submit" value="关闭" style="height: 29px; width: 44px" class="style2" /> 
+			</form>
+			</td>
+		</tr>
+	</table>
+	</fieldset></td>
+		<td style="width: 145px">
+	<fieldset name="Group1" style="width: 147px; height: 143px">
+	<legend>6#电源</legend>
+	
+	<table style="width: 100%; height: 123px">
+		<form action="" method="post">
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电压</td>
+			<td>
+			<input id="volt6" name="volt6" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电流</td>
+			<td>
+			<input id="curr6" name="curr6" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">
+			状态</td>
+			<td>
+			<input id="stat6" name="stat6" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		</form>
+		<tr>
+			<td colspan="2" align="center">
+			<form action="cgi-bin/relay.cgi" method="post">
+			<input name="open6" type="submit" value="打开" style="height: 29px; width: 44px" class="style2" />
+			<input name="close6" type="submit" value="关闭" style="height: 29px; width: 44px" class="style2" /> 
+			</form>
+			</td>
+		</tr>
+	</table>
+	</fieldset></td>
+		<td style="width: 144px">
+	<fieldset name="Group1" style="width: 147px; height: 143px">
+	<legend>7#电源</legend>
+	
+	<table style="width: 100%; height: 123px">
+		<form action="" method="post">
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电压</td>
+			<td>
+			<input id="volt7" name="volt7" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电流</td>
+			<td>
+			<input id="curr7" name="curr7" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">
+			状态</td>
+			<td>
+			<input id="stat7" name="stat7" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		</form>
+		<tr>
+			<td colspan="2" align="center">
+			<form action="cgi-bin/relay.cgi" method="post">
+			<input name="open7" type="submit" value="打开" style="height: 29px; width: 44px" class="style2" />
+			<input name="close7" type="submit" value="关闭" style="height: 29px; width: 44px" class="style2" /> 
+			</form>
+			</td>
+		</tr>
+	</table>
+	</fieldset></td>
+		<td>
+	<fieldset name="Group1" style="width: 147px; height: 143px">
+	<legend>8#电源</legend>
+	
+	<table style="width: 100%; height: 123px">
+		<form action="" method="post">
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电压</td>
+			<td>
+			<input id="volt8" name="volt8" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">电流</td>
+			<td>
+			<input id="curr8" name="curr8" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		<tr>
+			<td style="width: 52px; font-family: 宋体; color: #0066FF; font-size: 18px; font-weight: bold;" bgcolor="#FFFFFF" align="center">
+			状态</td>
+			<td>
+			<input id="stat8" name="stat8" type="text" class="style1" style="width: 68px; height: 23px; background-color: #C0C0C0;" /></td>
+		</tr>
+		</form>
+		<tr>
+			<td colspan="2" align="center">
+			<form action="cgi-bin/relay.cgi" method="post">
+			<input name="open8" type="submit" value="打开" style="height: 29px; width: 44px" class="style2" />
+			<input name="close8" type="submit" value="关闭" style="height: 29px; width: 44px" class="style2" /> 
+			</form>
+			</td>
+		</tr>
+	</table>
+	</fieldset></td>
+	</tr>
+</table>
+
+<input name="refresh" type="submit" value="提交" style="display: none" onclick="sender()"/>
+</form>
+
+<hr></hr>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>syslog</title>
+<style type="text/css">
+.style1 {
+	text-align: center;
+	font-family: 华文隶书;
+	font-size: x-large;
+}
+.style2 {
+	text-align: center;
+}
+.style3 {
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.style4 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.style5 {
+	margin-left: 2px;
+}
+.style6 {
+	margin-left: 1px;
+}
+</style>
+<script language="javascript" type="text/javascript">
+function fnOnSubmit(theForm) {
+	if (theForm.elements['level'].value == '' ) {
+		alert('必须输入查询条件中的级别选项');
+		theForm.elements['waynum'].focus();
+		return false;
+	} 
+		
+	return true;
+}
+</script>
+
+
+</head>
+
+<body bgcolor="#9EDDEF" leftmargin=10>
+<p class="style1" > 系 统 日 志 </p>
+<hr />
+
+<form method="post" action="cgi-bin/log.cgi" onsubmit="return fnOnSubmit(this)">
+<table style="width: 100%; height: 589px;">
+	<tr>
+		<td style="width: 204px" class="style3">
+		
+			<fieldset name="Group1" style="height: 326px">
+			<legend>查询条件<br />
+			</legend>
+			<table style="width: 100%; height: 218px">
+				<tr>
+					<td style="width: 103px" align="center">报警级别</td>
+					<td>
+					<select name="level" style="width: 100px; height: 30px;">
+					<option>debug</option>
+					<option>warn</option>
+					<option>fatal</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td style="width: 103px" align="center">开始日期</td>
+					<td>
+					<input name="startdate" type="text" style="width: 97px; height: 27px" /></td>
+				</tr>
+				<tr>
+					<td style="width: 103px" align="center">结束日期</td>
+					<td>
+					<input name="stopdate" type="text" style="width: 96px; height: 27px" /></td>
+				</tr>
+				<tr>
+					<td style="width: 103px">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td style="width: 103px">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="height: 61px" class="style2">
+					<input name="submit" type="submit" value="提交" style="width: 68px; height: 40px" class="style6" />&nbsp;
+					<input name="reset" type="reset" value="重置" style="width: 68px; height: 40px" class="style5" /></td>
+				</tr>
+				<tr>
+					<td style="width: 103px">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+			</fieldset>
+		</td>
+		<td class="style4" style="width: 736px">
+		<!-- query data -->
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+
+</html>
